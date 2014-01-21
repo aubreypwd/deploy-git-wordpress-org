@@ -1,3 +1,7 @@
+# Avoid Errors
+
+Always change the tag when using deploy to avoid adding `/trunk > /tags/{existing tag}/trunk`.
+
 # How to use
 
 	sh deploy.wordpress.org.sh [plugin_file_with_header.php] [WordPress.org Username]
