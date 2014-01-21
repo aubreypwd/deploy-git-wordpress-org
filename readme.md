@@ -14,4 +14,4 @@
 
 `git subtree pull --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash`
 
-Or use `update-subtree.sh` once you've already added it.
+Or use `sh deploy-git-wordpress-org/update-subtree.sh` once you've already added it.
