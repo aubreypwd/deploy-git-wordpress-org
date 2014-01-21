@@ -2,15 +2,15 @@
 
 	sh deploy.wordpress.org.sh [plugin_file_with_header.php] [WordPress.org Username]
 
-# Example
+## Example
 
 	sh deploy.wordpress.org.sh index.php aubreypwd
 
-# Add to your repo as a subtree
+## Add to your repo as a subtree
 
 	git subtree add --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash
 
-# Periodically update (Updates your script from this repo)
+## Periodically update (Updates your script from this repo)
 
 	git subtree pull --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash
 
