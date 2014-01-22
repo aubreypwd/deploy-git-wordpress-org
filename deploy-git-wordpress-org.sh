@@ -54,7 +54,7 @@ svn co $SVNURL $SVNPATH
 git checkout-index -a -f --prefix=$SVNPATH/trunk/
 
 # Ignore some common files
-svn propset svn:ignore "deploy.sh
+svn propset svn:ignore "deploy-git-wordpress-org
 README.md
 readme.md
 .hg
