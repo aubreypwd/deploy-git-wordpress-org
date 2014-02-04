@@ -1,8 +1,10 @@
 # Status
 
-Current status of project is: **unstable, untested**
+Current status of project is: **~~stable~~, unstable, untested**
 
 Use current version with caution.
+
+- Tested the readme update with success at https://plugins.trac.wordpress.org/changeset/851031 using true readme update switch.
 
 # How to use
 
