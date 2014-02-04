@@ -13,7 +13,7 @@ I.e.: `sh deploy.wordpress.org.sh index.php aubreypwd false`
 
 	git subtree add --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash
 
-## Update to the latest version
+## Update to the latest from the repository
 
 	git subtree pull --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash
 
