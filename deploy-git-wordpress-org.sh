@@ -4,7 +4,7 @@
 # =================================================
 # By: Aubrey Portwood
 # https://github.com/aubreypwd/deploy-git-wordpress-org
-# Version: 1.1
+# Version: 1.0
 # =================================================
 # Based on:
 # https://github.com/brainstormmedia/deploy-plugin-to-wordpress-dot-org/blob/master/deploy.sh
@@ -94,8 +94,10 @@ if [ $3 = "true" ]; then
 	svn propset svn:ignore "$SVN_IGNORE" "$SVNPATH/trunk/"
 	
 	# Copy the readme from trunk to the stable tag.
-	cp -f $SVNPATH/trunk/readme.txt $SVNPATH/tags/$NEWVERSION1/readme.txt
-	echo "- Just copied readme.txt from $SVNPATH/trunk/readme.txt to $SVNPATH/tags/$NEWVERSION2/readme.txt."
+	cp $SVNPATH/trunk/readme.txt $SVNPATH/tags/$NEWVERSION1/readme.txt
+	echo "- Just copied readme.txt from $SVNPATH/trunk/readme.txt to $SVNPATH/tags/$NEWVERSION1/readme.txt."
+
+	cd $SVNPATH/
 
 	echo "$LANG2"
 	svn commit --username=$2 -m "$COMMITMSG"
