@@ -1,10 +1,11 @@
 # Status
 
-Current status of project is: **~~stable~~, unstable, untested**
+Current status of project is: **stable, ~~unstable~~, ~~untested~~, needs-community-testing**
 
-Use current version with caution.
+Things appear to be stable.
 
-- Tested the readme update with success at https://plugins.trac.wordpress.org/changeset/851031 using true readme update switch.
+- Tested the readme.txt update with success at https://plugins.trac.wordpress.org/changeset/851031 using true readme update switch.
+- Tested the tag deploy method (old method) at http://plugins.trac.wordpress.org/changeset/851034 and http://plugins.trac.wordpress.org/changeset/851035
 
 # How to use
 
