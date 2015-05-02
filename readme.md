@@ -12,15 +12,23 @@ Things appear to be stable.
 Usage: `sh deploy.wordpress.org.sh [plugin_file_with_header.php] [WordPress.org Username] [Update Readme Only: true|false]`
 I.e.: `sh deploy.wordpress.org.sh index.php aubreypwd false`
 
-## Add to your repo as a subtree
+# How to get
+
+I suggest you download the `deploy.wordpress.org.sh` file and use it temporarily to deploy your plugin then remove it.
+
+But, I have added it to my plugins via subtree and submodules.
+
+## As a subtree project
 
 	git subtree add --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash
 
-## Update to the latest from the repository
+### Update to the latest from the repository
 
 	git subtree pull --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash
 
-Or, use `sh deploy-git-wordpress-org/update-subtree.sh` once you've already added it.
+## As a Submodule (Easiest)
+
+	git submodule add https://github.com/aubreypwd/deploy-git-wordpress-org
 
 # Changelog
 
