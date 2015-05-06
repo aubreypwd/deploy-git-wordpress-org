@@ -1,12 +1,3 @@
-# Status
-
-Current status of project is: **stable, ~~unstable~~, ~~untested~~, needs-community-testing**
-
-Things appear to be stable.
-
-- Tested the readme.txt update with success at https://plugins.trac.wordpress.org/changeset/851031 using true readme update switch.
-- Tested the tag deploy method (old method) at http://plugins.trac.wordpress.org/changeset/851034 and http://plugins.trac.wordpress.org/changeset/851035
-
 # How to use
 
 Usage: `sh deploy.wordpress.org.sh [plugin_file_with_header.php] [WordPress.org Username] [Update Readme Only: true|false]`
