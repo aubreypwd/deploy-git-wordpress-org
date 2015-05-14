@@ -8,7 +8,7 @@
 # Based on: https://github.com/brainstormmedia/deploy-plugin-to-wordpress-dot-org/blob/master/deploy.sh
 
 # HEADERS MUST BE FORMATTED LIKE:
-
+#
 # /*
 # Plugin Name: Google Destination URL
 # Plugin URI: https://bitbucket.org/aubreypwd/gdurl
