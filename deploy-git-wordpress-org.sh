@@ -1,17 +1,14 @@
 #! /bin/bash
 
 # deploy-git-wordpress-org.sh
-# =================================================
-# By: Aubrey Portwood
+
+# By: Aubrey Portwood, Brand Parbs
 # https://github.com/aubreypwd/deploy-git-wordpress-org
 # Version: 1.0
-# =================================================
-# Based on:
-# https://github.com/brainstormmedia/deploy-plugin-to-wordpress-dot-org/blob/master/deploy.sh
-# =================================================
+# Based on: https://github.com/brainstormmedia/deploy-plugin-to-wordpress-dot-org/blob/master/deploy.sh
 
 # HEADERS MUST BE FORMATTED LIKE:
-# =================================================
+
 # /*
 # Plugin Name: Google Destination URL
 # Plugin URI: https://bitbucket.org/aubreypwd/gdurl
@@ -24,9 +21,15 @@
 #
 # DOCBLOCKS DO NOT WORK!
 
+# Deps
+if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
+	echo "Usage: sh deploy.wordpress.org.sh [plugin_file_with_header.php] [WordPress.org Username] [Update Readme Only: true|false]";
+	echo "I.e.: sh deploy.wordpress.org.sh index.php aubreypwd false";
+	exit 1;
+fi
 
-echo "<deploy-git-wordpress-org>"
-echo "=================================="
+echo "Starting Deployment to WP.org..."
+echo "================================"
 
 # Current directory
 PLUGINSLUG=${PWD##*/}
@@ -39,16 +42,6 @@ SVNIGNORE="deploy-git-wordpress-org
 	.hgignore
 	.git
 	.gitignore"
-
-echo "- We will be ignoring some files in your Git repo:"
-echo "$SVNIGNORE"
-
-# Deps
-if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then 
-	echo "Usage: sh deploy.wordpress.org.sh [plugin_file_with_header.php] [WordPress.org Username] [Update Readme Only: true|false]";
-	echo "I.e.: sh deploy.wordpress.org.sh index.php aubreypwd false";
-	exit 1;
-fi
 
 # Temp place to put the SVN
 SVNPATH="/tmp/$PLUGINSLUG"
@@ -137,3 +130,5 @@ fi
 # Cleanup!
 echo "- Removing the SVN repo at $SVNPATH"
 rm -rf "${SVNPATH:?}/"*
+
+echo "Deployment finished."
