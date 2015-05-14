@@ -5,7 +5,7 @@ I.e.: `sh deploy.wordpress.org.sh index.php aubreypwd false`
 
 # Download Script
 
-[Download](https://raw.githubusercontent.com/aubreypwd/deploy-git-wordpress-org/1.0-summit/deploy-git-wordpress-org.sh)
+[Download](https://raw.githubusercontent.com/aubreypwd/deploy-git-wordpress-org/1.0-summit/deploy-git-wordpress-org.sh) *(Right Click and Save As)*
 
 # Add to your project
 
