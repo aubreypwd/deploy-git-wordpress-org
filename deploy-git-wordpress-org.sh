@@ -122,7 +122,7 @@ else
 	svn copy trunk/ tags/"$NEWVERSION1"/
 	cd "$SVNPATH"/tags/"$NEWVERSION1"
 
-	echo "- Comitting $NEWVERSION2 to WP.org..."
+	echo "- Committing $NEWVERSION2 to WP.org..."
 	svn commit --username="$2" -m "Version/Tag: $NEWVERSION1"
 
 fi
