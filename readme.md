@@ -7,7 +7,7 @@ I.e.: `sh deploy.wordpress.org.sh index.php aubreypwd false`
 
 *(Right Click & Save As)*
 
-- [Download v1.0 "Summit"](https://raw.githubusercontent.com/aubreypwd/deploy-git-wordpress-org/1.0-summit/deploy-git-wordpress-org.sh)
+- [Download Stable v1.0](https://raw.githubusercontent.com/aubreypwd/deploy-git-wordpress-org/1.0-summit/deploy-git-wordpress-org.sh)
 - [Download In-Development v1.1-dev](https://raw.githubusercontent.com/aubreypwd/deploy-git-wordpress-org/master/deploy-git-wordpress-org.sh)
 
 *Note that the in-development version may be unstable.*
