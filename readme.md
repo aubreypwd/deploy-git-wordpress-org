@@ -1,28 +1,32 @@
-# How to use
+# Usage
 
 Usage: `sh deploy.wordpress.org.sh [plugin_file_with_header.php] [WordPress.org Username] [Update Readme Only: true|false]`
 I.e.: `sh deploy.wordpress.org.sh index.php aubreypwd false`
 
-# How to get
+# Download Script
 
-I suggest you download the `deploy.wordpress.org.sh` file and use it temporarily to deploy your plugin then remove it.
+[Download](https://raw.githubusercontent.com/aubreypwd/deploy-git-wordpress-org/1.0-summit/deploy-git-wordpress-org.sh)
 
-But, I have added it to my plugins via subtree and submodules.
+# Add to your project
 
-## As a subtree project
+*Replace `1.0-summit` below with `master` for the in-development version.*
 
-	git subtree add --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash
+## Add as a Subtree
+
+	git subtree add --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org 1.0-summit --squash
 
 ### Update to the latest from the repository
 
-	git subtree pull --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org master --squash
+	git subtree pull --prefix deploy-git-wordpress-org https://github.com/aubreypwd/deploy-git-wordpress-org 1.0-summit --squash
 
-## As a Submodule (Easiest)
+## As as Submodule
 
-	git submodule add https://github.com/aubreypwd/deploy-git-wordpress-org
+	git submodule add -b 1.0-summit https://github.com/aubreypwd/deploy-git-wordpress-org
+
+_______________________
 
 # Changelog
 
-## 1.0
+## 1.0 "Summit"
 
-* Now accepts 3rd parameter that tells the script whether to just update the readme.txt or re-tag.
+- Now accepts 3rd parameter that tells the script whether to just update the readme.txt or re-tag.
