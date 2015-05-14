@@ -35,3 +35,8 @@ _______________________
 ## 1.0 "Summit"
 
 - Now accepts 3rd parameter that tells the script whether to just update the readme.txt or re-tag.
+
+## 1.1 (In Development)
+
+- Improvements to Shell Script thanks to @bradp
+- Changes and re-wording of some of the output
