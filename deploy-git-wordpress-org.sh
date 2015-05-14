@@ -2,7 +2,7 @@
 
 # deploy-git-wordpress-org.sh
 
-# By: Aubrey Portwood, Brand Parbs
+# By: Aubrey Portwood, Brad Parbs
 # https://github.com/aubreypwd/deploy-git-wordpress-org
 # Version: 1.0
 # Based on: https://github.com/brainstormmedia/deploy-plugin-to-wordpress-dot-org/blob/master/deploy.sh
